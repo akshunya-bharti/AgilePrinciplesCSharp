@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>AgilePrinciplesCSharp.Listing11_2</StartupObject>
+    <StartupObject>AgilePrinciplesCSharp.Figure12_1</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Listing11_1.cs" />
     <Compile Include="Listing11_2.cs" />
+    <Compile Include="Figure12_1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
