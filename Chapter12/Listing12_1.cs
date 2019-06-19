@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AgilePrinciplesCSharp
+namespace AgilePrinciplesCSharp.Chapter12
 {
     public class Listing12_1
     {

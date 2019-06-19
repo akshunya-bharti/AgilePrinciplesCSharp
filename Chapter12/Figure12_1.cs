@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace AgilePrinciplesCSharp
+namespace AgilePrinciplesCSharp.Chapter12
 {
     class Figure12_1
     {
@@ -19,12 +19,12 @@ namespace AgilePrinciplesCSharp
             for (; ; )
             {
                 timer.Register(Convert.ToInt32(timeoutInSec), timedDoor);
-                
+
                 var input = Console.ReadLine();
 
-                if(input == "O")
+                if (input == "O")
                 {
-                    if(!timedDoor.DoorOpen)
+                    if (!timedDoor.DoorOpen)
                     {
                         timedDoor.Unlock();
                         timer.stopwatch.Start();
@@ -35,7 +35,7 @@ namespace AgilePrinciplesCSharp
                         Console.WriteLine("Door Already Open");
                     }
                 }
-                else if(input == "C")
+                else if (input == "C")
                 {
                     timer.Register(Convert.ToInt32(timeoutInSec), timedDoor);
 
@@ -79,7 +79,7 @@ namespace AgilePrinciplesCSharp
 
             public bool IsDoorOpen()
             {
-                if(DoorOpen)
+                if (DoorOpen)
                 {
                     return true;
                 }

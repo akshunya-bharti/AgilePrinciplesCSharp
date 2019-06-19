@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace AgilePrinciplesCSharp
+namespace AgilePrinciplesCSharp.Chapter11
 {
     enum TemperatureDirection { Rising, Falling };
 
@@ -39,9 +39,9 @@ namespace AgilePrinciplesCSharp
             MinTemp = minTemp;
             MaxTemp = maxTemp;
 
-            for(; ; )
+            for (; ; )
             {
-                while(Thermometer.Read() > MinTemp)
+                while (Thermometer.Read() > MinTemp)
                 {
                     Wait();
                 }
@@ -86,11 +86,11 @@ namespace AgilePrinciplesCSharp
 
         public double Read()
         {
-            if(Regulate.TemperatureDirection == TemperatureDirection.Rising)
+            if (Regulate.TemperatureDirection == TemperatureDirection.Rising)
             {
                 CurrentTemperature += 0.5;
             }
-            else if(Regulate.TemperatureDirection == TemperatureDirection.Falling)
+            else if (Regulate.TemperatureDirection == TemperatureDirection.Falling)
             {
                 CurrentTemperature -= 0.5;
             }

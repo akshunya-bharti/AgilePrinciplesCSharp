@@ -46,10 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Listing11_1.cs" />
-    <Compile Include="Listing11_2.cs" />
-    <Compile Include="Figure12_1.cs" />
-    <Compile Include="Listing12_1.cs" />
+    <Compile Include="Chapter11\Listing11_1.cs" />
+    <Compile Include="Chapter11\Listing11_2.cs" />
+    <Compile Include="Chapter12\Figure12_1.cs" />
+    <Compile Include="Chapter12\Listing12_1.cs" />
+    <Compile Include="Chapter12\Listing12_2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
